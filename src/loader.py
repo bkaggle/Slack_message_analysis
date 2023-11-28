@@ -103,12 +103,13 @@ class SlackDataLoader:
                 reply_users_list.append(",".join(row['reply_users']) if 'reply_users' in row.keys() else '0')
                 reply_count_list.append(row['reply_count'] if 'reply_count' in row.keys() else 0)
                 reply_users_count_list.append(row['reply_users_count'] if 'reply_users_count' in row.keys() else 0)
+                
                 tm_thread_end_list.append(row['latest_reply'] if 'latest_reply' in row.keys() else 0)
 
         data = zip(msg_type_list, msg_content_list, sender_name_list, time_msg_list, msg_dist_list, time_thread_start_list,
                 reply_count_list, reply_users_count_list, reply_users_list, tm_thread_end_list)
         columns = ['msg_type', 'msg_content', 'sender_name', 'msg_sent_time', 'msg_dist_type',
-                'time_thread_start', 'reply_count', 'reply_users_count', 'reply_users', 'tm_thread_end']
+                'time_thread_start', 'reply_count', 'reply_users_count', 'reply_users','tm_thread_end']
 
         df = pd.DataFrame(data=data, columns=columns)
         df = df[df['sender_name'] != 'Not provided']
