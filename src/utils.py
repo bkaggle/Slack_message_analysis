@@ -4,6 +4,9 @@ import glob
 import json
 import datetime
 import re
+
+
+
 from collections import Counter
 from collections import Counter
 
@@ -169,20 +172,16 @@ def get_messages_from_channel(channel_path):
 
 def convert_2_timestamp(column, data):
     """convert from unix time to readable timestamp
-        args: column: columns that needs to be converted to timestamp
+        args: column: columns that need to be converted to timestamp
                 data: data that has the specified column
     """
     if column in data.columns.values:
-        timestamp_ = []
-        for time_unix in data[column]:
-            if time_unix == 0:
-                timestamp_.append(0)
-            else:
-                a = datetime.datetime.fromtimestamp(float(time_unix))
-                timestamp_.append(a.strftime('%Y-%m-%d %H:%M:%S'))
-        return timestamp_
-    else: 
+        data[column] = pd.to_datetime(data[column], unit='s', errors='coerce')
+        return data[column]
+    else:
         print(f"{column} not in data")
+
+
 
 def get_tagged_users(df):
     """get all @ in the messages"""
