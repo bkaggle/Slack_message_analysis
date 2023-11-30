@@ -10,3 +10,4 @@ gensim
 pymongo
 psycopg2
 sqlalchemy
+pyLDAvis
