@@ -7,3 +7,6 @@ wordcloud
 plotly
 scikit-learn
 gensim
+pymongo
+psycopg2
+sqlalchemy
