@@ -10,4 +10,5 @@ gensim
 pymongo
 psycopg2
 sqlalchemy
+streamlit
 pyLDAvis
