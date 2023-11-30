@@ -5,3 +5,5 @@ pick==2.2.0
 seaborn==0.13.0
 wordcloud
 plotly
+scikit-learn
+gensim
