@@ -1,0 +1,125 @@
+,msg_type,msg_content,sender_name,msg_sent_time,msg_dist_type,time_thread_start,reply_count,reply_users_count,reply_users,tm_thread_end,channel
+0,message,Good morning everyone :blush: welcome to week 8 of 12.  Wishing you all a productive week ahead ,Garrett Bell,1665385707.569729,text,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+1,message,Good morning!,Carlos Gross,1665385734.616309,text,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+2,message,Good Morning.,Samuel King,1665385760.620169,text,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+3,message,Good Morning!!!,Daniel Brown,1665387214.795849,text,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+4,message,Good Morning.,Willie Yang,1665388127.826899,text,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+5,message,"Good morning all, Monday music on standup link, join now to vibe with me",Vanessa Norman,1665388592.635289,text,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+6,message,"How do We get the k-line data guys? there are too many varieties,",Joshua Rhodes,1665396091.818989,text,1665396091.818989,1,1,U03UG4Q7V42,1665426020.667739,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+7,message,"You can find the updated list of quake books from week 7 hot seaters here.
+
+<https://www.notion.so/Quake-books-1a622f5c9a1f4a418126fcc4ce05aa01>",Travis Butler,1665399605.224129,text,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+8,message,Has the session ended? I lost connection and I cannot rejoin.,Brian Odom,1665412261.292449,text,1665412261.292449,3,3,"U03V61VGQG0,U03TEPYRM2P,U03UJKJGRAQ",1665412344.224389,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+9,message,yes it has ended.,Paula Bryant,1665412277.359839,text,1665412261.292449,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+10,message,yes,Garrett Bell,1665412281.779959,text,1665412261.292449,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+11,message,Ok .. so I missed only a couple of minutes.,Brian Odom,1665412344.224389,text,1665412261.292449,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+12,message,"hi, i just want to confirm that the submission dates on this week's challenge document are correct?
+• interim submission - *tuesday* 11th oct at 8pm utc (vs wednesday)
+• final submission - *thursday* 13th oct at 8pm utc (vs saturday)",Elizabeth Hall,1665412350.628759,text,1665412350.628759,3,3,"U03TEPYRM2P,U03UP7V9Q57,U03UD5B7C3X",1665414520.397339,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+13,message,Thank you for spoting that Wangui. Let me confirm that from the tutors,Garrett Bell,1665412436.978359,text,1665412350.628759,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+14,message,"<@U03UUN8M4RX> In answering my question you said ""if you transported yourself to the past..""
+if I did transport myself to the past, I would told everyone how I invented time-travel and all the markets would have crashed. :smile:",Brian Odom,1665412703.494659,user,1665412703.494659,2,2,"U03UD68RQH3,U03UJKJGRAQ",1665421587.914539,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+15,message,Updated back to Wednesday and Saturday,Michele Sparks,1665414112.162979,text,1665412350.628759,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+16,message,nice. thank you!,Elizabeth Hall,1665414520.397339,text,1665412350.628759,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+17,message,With great power comes great responsibility so use it wisely :smile:,Brady Rhodes,1665420888.641139,text,1665412703.494659,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+18,message,that's true <@U03UD68RQH3> I will keep  that in mind when I time-travel next time :laughing:,Brian Odom,1665421587.914539,text,1665412703.494659,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+19,message,"""Integration of backtesting framework""
+
+This is the one of the Wednesday deliverables under the Github link submission.
+
+Is this referring to the models?",Michelle Lewis,1665423328.130499,text,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+20,message,"Are we supposed to create our own backtesting algorithm or we are going to use one out of the ones provided (<https://backtrader.com/docu/|backtrader>, <https://vectorbt.dev/|vectorbt>, or <https://www.freqtrade.io/en/stable/backtesting/|freqtrade>)?",Michelle Lewis,1665424090.843419,text,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+21,message,"• Create a dynamic scene (simple json or ini file) that automates the run of backtests by taking in parameters
+    ◦ Date range (start and end date for backtest)
+    ◦ *Indicator*
+    ◦ Indicator params range
+Does ""indicator"" in the above sentence means a variable in the in the dataset?",Michelle Lewis,1665424738.715489,rich_text_section,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+22,message,Have you gotten an answer for this <@U03U1FNPEUX>?,Phillip Atkins,1665426020.667739,text,1665396091.818989,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+23,message,"when cloning a repo, what's the difference between using git@gitrepolink and gitrepolink when cloning repo?",Michelle Lewis,1665434032.507359,text,1665434032.507359,6,3,"U03U1FNPEUX,U03UJN29Y4C,U03UD68RQH3",1665467582.233329,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+24,message,can you clarify?,Joshua Rhodes,1665434675.449259,text,1665434032.507359,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+25,message,the first is .git the second is .html,Michelle Lewis,1665435307.697649,text,1665434032.507359,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+26,message,are you referring https vs ssh?,Brady Rhodes,1665438872.227919,text,1665434032.507359,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+27,message,u mean <https://github.com/> vs <mailto:git@github.com|git@github.com> ?,Brady Rhodes,1665438976.810699,text,1665434032.507359,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+28,message,If so the difference lies in what your asked as credintials. the first one requires you to provide your ssh public key. And the latter uses your (github) username and PW,Joshua Rhodes,1665442798.975139,text,1665434032.507359,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+29,message,```pip install matplotlib==3.2.2```,Amy Leon,1665447590.721639,text,1665447406.723449,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+30,message,This have several aftermaths it does not get the error fixed,Daniel Brown,1665448087.606109,text,1665447406.723449,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+31,message,"```sudo apt-get install libfreetype6-dev
+sudo apt-get install pkg-config
+sudo apt-get install libpng-dev
+sudo apt-get install pkg-config```",Amy Leon,1665448172.643319,text,1665447406.723449,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+32,message,Try installing these packages,Amy Leon,1665448185.461419,text,1665447406.723449,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+33,message,<@U03U1FNPEUX> Thank you,Michelle Lewis,1665467582.233329,user,1665434032.507359,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+34,message,<!channel> Daily standup has started,Garrett Bell,1665475507.168689,broadcast,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+35,message,"website from the current session (database design):
+<https://dbdiagram.io/home>",Brian Odom,1665490319.589579,text,1665490319.589579,1,1,U03UG0SFHGT,1665490648.418599,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+36,message,Thank you <@U03UJKJGRAQ>,Willie Yang,1665490648.418599,text,1665490319.589579,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+37,message,can i get a recorded tutorial of today’s  back testing?,Nancy Craig,1665501880.342719,text,1665501880.342719,8,5,"U03V6HMRPGQ,U03UG1Z21JP,U03UG5VFN03,U03TEPYRM2P,U03UAKATQ22",1665558349.600599,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+38,message,<@U03TEPYRM2P> can we ?,Cristian Wilson,1665502238.832359,user,1665501880.342719,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+39,message,I joined late due to internet issues. I would love to have the record as soon as possible <@U03TEPYRM2P>,Jennifer Foley,1665502972.148749,text,1665501880.342719,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+40,message,I was ateneded but I need some part of it,Nancy Craig,1665503093.676149,text,1665501880.342719,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+41,message,Sure! The upload is in progress,Garrett Bell,1665504398.255839,text,1665501880.342719,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+42,message,Thank you so much,Nancy Craig,1665504432.691569,text,1665501880.342719,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+43,message,"During reading I witness a term (Security) in most of the provided docs, can anyone explain it?",Cristian Wilson,1665505715.758419,text,1665505715.758419,7,5,"U03V5Q9N516,U03UG4Q7V42,U03UD68RQH3,U03V6HMRPGQ,U03UVHCV6KB",1665507710.318549,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+44,message,I think it is associated with the success of the trading!,Debra Lawrence,1665505812.445459,text,1665505715.758419,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+45,message,it is something that has monetary value and which can be traded on the market.,Phillip Atkins,1665505970.845419,text,1665505715.758419,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+46,message,"don't confuse it with it's literal meaning, <@U03UG4Q7V42> defined it well... it could be gold, Real states, stocks etc..",Brady Rhodes,1665506786.331179,text,1665505715.758419,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+47,message,so it is a financial term referring to a commodity ?,Cristian Wilson,1665507637.215649,text,1665505715.758419,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+48,message,<@U03V6HMRPGQ> yeah,Brady Rhodes,1665507662.646459,user,1665505715.758419,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+49,message,Thank you all for the answers,Cristian Wilson,1665507710.318549,text,1665505715.758419,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+50,message,What should be the date range of the data we will be downloading?,Michelle Lewis,1665513700.897779,text,1665513700.897779,1,1,U03UJN29Y4C,1665524581.287339,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+51,message,Thanks again I got it,Nancy Craig,1665513750.632219,text,1665501880.342719,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+52,message,<@U03TEPYRM2P> The uploaded file has only 360p quality. Is there a way to upgrade it?,Gary Thomas,1665522409.054749,user,1665501880.342719,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+53,message,"Hey <!channel> your RDS postgres databases are ready and you can access them from your EC2 instances
+
+You can connect using
+`psql --host <http://melachallengedatabase.crlafpfc5g5y.us-east-1.rds.amazonaws.com|melachallengedatabase.crlafpfc5g5y.us-east-1.rds.amazonaws.com> --port 5432 --username groupNameuser --password --dbname groupNamedb`
+
+substitute groupName with all lowercase versions of your group name
+
+example connection:
+`psql --host <http://melachallengedatabase.crlafpfc5g5y.us-east-1.rds.amazonaws.com|melachallengedatabase.crlafpfc5g5y.us-east-1.rds.amazonaws.com> --port 5432 --username changuser --password --dbname changdb`
+
+Password for all groups is _groupNamepass_ example - _changpass_
+
+Exceptions to this are group 4. group 4 will use yvonne (first name) as the group name instead of Choquet-Bruhat
+
+Use this thread if you're facing problems connecting",Mandy Sweeney,1665523875.578819,text,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+54,message,<@U03UKL27B0R>,Michelle Lewis,1665524581.287339,user,1665513700.897779,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+55,message,"That is the maximum quality we received from Google. However, you can check your network ",Garrett Bell,1665558349.600599,text,1665501880.342719,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+56,message,didn’t see this when I posted the same thing below :wink:,Eric Myers,1665568484.903069,text,1665566115.858629,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+57,message,When is the second tutorial scheduled for today,Daniel Brown,1665580935.055059,text,1665580935.055059,6,4,"U03UVHCV6KB,U03UD68RQH3,U03UG0YHAUT,U03TEPYRM2P",1665581291.773299,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+58,message,has been postponed to tomorrow,Travis Butler,1665581016.964689,text,1665580935.055059,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+59,message,<https://10academybatch6.slack.com/archives/C03U4J8J4LQ/p1665561498734959>,Travis Butler,1665581027.049859,link,1665580935.055059,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+60,message,it's re-scheduled to tomorrow 9:30 AM UTC,Brady Rhodes,1665581045.876169,text,1665580935.055059,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+61,message,:pray: <@U03UVHCV6KB>,Daniel Brown,1665581105.690759,emoji,1665580935.055059,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+62,message,:pray: <@U03UD68RQH3>,Daniel Brown,1665581149.732859,emoji,1665580935.055059,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+63,message,1pm UTC tomorrow please ,Garrett Bell,1665581291.773299,text,1665580935.055059,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+64,message,"hi <@U03TEPYRM2P>, i know today's tutorial session just ended but could we have it uploaded really soon?",Elizabeth Hall,1665671064.872769,text,1665671064.872769,1,1,U03TEPYRM2P,1665671944.274899,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+65,message,<!here> can someone send me the docker-compose file for Kafka connector,Travis Butler,1665671213.446189,broadcast,1665671213.446189,2,1,U03UKL27B0R,1665684299.100249,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+66,message,sure - it will be uploaded as soon as possible,Garrett Bell,1665671944.274899,text,1665671064.872769,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+67,message,<https://www.youtube.com/watch?v=uZnp21fu8TQ>,Jennifer Foley,1665681516.144379,link,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+68,message,<https://github.com/confluentinc/cp-docker-images>,Brittany Garcia,1665684295.191149,link,1665671213.446189,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+69,message,This is the official docker image of conlfuent. You can find the distributed &amp; standalone mode for running the entire kafka setup,Brittany Garcia,1665684299.100249,text,1665671213.446189,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+70,message,can any one help me how to define dates in PostgreSQL shcema ?,Cristian Wilson,1665688834.338989,text,1665688834.338989,3,2,"U03UVHCV6KB,U03V6HMRPGQ",1665730950.685009,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+71,message,"```DROP TABLE IF EXISTS employees;
+
+CREATE TABLE employees (
+	employee_id serial PRIMARY KEY,
+	first_name VARCHAR (255),
+	last_name VARCHAR (355),
+	birth_date DATE NOT NULL,
+	hire_date DATE NOT NULL
+);
+
+INSERT INTO employees (first_name, last_name, birth_date, hire_date)
+VALUES ('Shannon','Freeman','1980-01-01','2005-01-01'),
+	   ('Sheila','Wells','1978-02-05','2003-01-01'),
+	   ('Ethel','Webb','1975-01-01','2001-01-01');```",Travis Butler,1665689576.535569,text,1665688834.338989,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+72,message,"this can be a good start, for more detailed explanation refer this link <https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-date/>",Travis Butler,1665689621.531619,text,1665688834.338989,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+73,message,"Always there <@U03UVHCV6KB> :pray:,thank you",Cristian Wilson,1665730950.685009,text,1665688834.338989,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+74,message,"Kindly find the updated list of quake books, updated with week 8 hot seaters.
+<https://www.notion.so/Quake-books-1a622f5c9a1f4a418126fcc4ce05aa01>",Travis Butler,1665744861.425069,text,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+75,message,can I get the link of session,Cristian Wilson,1665756107.060959,text,1665756107.060959,1,1,U03UFV7HFNF,1665756165.638109,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+76,message,<https://meet.google.com/ysb-kjdn-hpp>,Judith Bolton,1665756126.005109,link,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+77,message,<http://meet.google.com/ysb-kjdn-hpp|http://meet.google.com/ysb-kjdn-hpp>,Miguel Herring,1665756165.638109,link,1665756107.060959,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8
+78,message,<https://youtu.be/zoKn4qk4mac>,Kelly Soto,1665837934.076499,link,0,0,0,0,0,c:\Users\user\Desktop\Week 0\Slack_message_analysis\data\all-week8

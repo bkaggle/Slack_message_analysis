@@ -9,41 +9,28 @@ from nltk.corpus import stopwords
 from wordcloud import WordCloud
 
 
+def convert_2_timestamp(column, data):
+    """convert from unix time to readable timestamp
+        args: column: columns that need to be converted to timestamp
+                data: data that has the specified column
+    """
+    if column in data.columns.values:
+        data[column] = pd.to_datetime(data[column], unit='s', errors='coerce')
+        return data[column]
+    else:
+        print(f"{column} not in data")
 
-# Add parent directory to path to import modules from src
-rpath = os.path.abspath('..')
-if rpath not in sys.path:
-    sys.path.insert(0, rpath)
+message_with_user = pd.read_csv('week8.csv')
+stl.set_option('deprecation.showPyplotGlobalUse', False)
 
-from src.loader import SlackDataLoader
-import src.utils as utils
-
+msg_sent_standard_time = convert_2_timestamp("msg_sent_time", message_with_user)
+message_with_user["msg_sent_standard_time"] = pd.to_datetime(msg_sent_standard_time)
 
 ### Parsing Data
-data_directory = os.path.join(rpath, "data")
-slack_data_loader = SlackDataLoader(data_directory)
-# List all directories in the 'data' directory
-directories = [d for d in os.listdir(data_directory) if os.path.isdir(os.path.join(data_directory, d))]
-
-
-dfs_by_directory = []
-
-# Iterate through each directory
-for directory in directories:
-    directory_path = os.path.join(data_directory, directory)
-    df_directory = slack_data_loader.slack_parser(directory_path)
-    
-    # Add a 'directory' column to identify the source directory
-    df_directory['directory'] = directory
-    
-    # Append the DataFrame to the list
-    dfs_by_directory.append(df_directory)
-
-# Concatenate all DataFrames into a single DataFrame
-slack_parser_df = pd.concat(dfs_by_directory, ignore_index=True)
+slack_parser_df = pd.read_csv('slack_data.csv')
 
 df = slack_parser_df.sort_values(by='msg_sent_time', ascending=True)
-df['time_sent'] = utils.convert_2_timestamp('msg_sent_time', df)
+df['time_sent'] = convert_2_timestamp('msg_sent_time', df)
 df['time_difference_seconds'] = df['time_sent'].diff().dt.total_seconds()
 
 combined_df  = pd.DataFrame()
