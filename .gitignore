@@ -2,6 +2,7 @@
 # KEDRO PROJECT
 /data/
 slack_data.csv
+week8.csv
 # ignore all local configuration
 conf/local/**
 !conf/local/.gitkeep

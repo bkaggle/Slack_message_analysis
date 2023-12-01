@@ -1,4 +1,4 @@
-import streamlit as stl
+import streamlit as st
 import os, sys
 import json
 import glob
@@ -9,104 +9,38 @@ from nltk.corpus import stopwords
 from wordcloud import WordCloud
 
 
-def convert_2_timestamp(column, data):
-    """convert from unix time to readable timestamp
-        args: column: columns that need to be converted to timestamp
-                data: data that has the specified column
-    """
-    if column in data.columns.values:
-        data[column] = pd.to_datetime(data[column], unit='s', errors='coerce')
-        return data[column]
-    else:
-        print(f"{column} not in data")
+df = pd.read_csv('slack_data.csv')
+# Display the DataFrame
+st.title("10 Academy")
+st.dataframe(df)
 
-message_with_user = pd.read_csv('week8.csv')
-stl.set_option('deprecation.showPyplotGlobalUse', False)
+# Sidebar for filtering options
+st.sidebar.title("Filter Options")
 
-msg_sent_standard_time = convert_2_timestamp("msg_sent_time", message_with_user)
-message_with_user["msg_sent_standard_time"] = pd.to_datetime(msg_sent_standard_time)
+# Filtering by channel
+selected_channel = st.sidebar.selectbox("Select Channel", df['channel'].unique())
 
-### Parsing Data
-slack_parser_df = pd.read_csv('slack_data.csv')
+# Filtering by message type
+selected_msg_type = st.sidebar.selectbox("Select Message Type", df['msg_type'].unique())
 
-df = slack_parser_df.sort_values(by='msg_sent_time', ascending=True)
-df['time_sent'] = convert_2_timestamp('msg_sent_time', df)
-df['time_difference_seconds'] = df['time_sent'].diff().dt.total_seconds()
+# Filter the DataFrame based on user selection
+filtered_df = df[(df['channel'] == selected_channel) & (df['msg_type'] == selected_msg_type)]
 
-combined_df  = pd.DataFrame()
+# Display filtered DataFrame
+st.subheader("Filtered DataFrame")
+st.dataframe(filtered_df)
 
-def draw_avg_reply_count(data, channel='Random'):
-    """who commands many replies?"""
+# Visualize top 10 users by number of messages
+st.subheader("Top 10 Users by Number of Messages")
+top_messages_per_user = filtered_df['sender_name'].value_counts().nlargest(10)
+st.bar_chart(top_messages_per_user)
 
-    fig, ax = plt.subplots(figsize=(15, 7.5))
-    data.groupby('sender_name')['reply_count'].mean().sort_values(ascending=False)[:20]\
-        .plot(kind='bar', ax=ax)
-    
-    ax.set_title(f'Average Number of reply count per Sender in #{channel}', size=20, fontweight='bold')
-    ax.set_xlabel("Sender Name", size=18)
-    ax.set_ylabel("Frequency", size=18)
-    ax.tick_params(axis='x', labelsize=14)
-    ax.tick_params(axis='y', labelsize=14)
+# Visualize top 10 users by number of replies
+st.subheader("Top 10 Users by Number of Replies")
+top_replies_per_user = filtered_df.groupby('sender_name').size().nlargest(10)
+st.bar_chart(top_replies_per_user)
 
-    # Return the Matplotlib figure
-    return fig
-
-
-stl.set_page_config(page_title="10 Academy week0", page_icon=":ninja:", layout="wide")
-# Header section
-
-# Body Section
-with stl.container():
-    stl.subheader("Hi, I am mike :wave:")
-    stl.title("This is a presentation of my finding for task 1 and 2")
-with stl.container():
-    stl.write("---")
-    left_column, right_column = stl.columns([0.3, 0.7])
-    with left_column:
-        stl.header("Task 1")
-        stl.write("##")
-        stl.write("""
-        Average number of reply count per Sender in the channel random
-        """)
-    with right_column:
-        stl.pyplot(draw_avg_reply_count(slack_parser_df))
-with stl.container():
-    stl.write("---")
-    left_column, right_column = stl.columns([0.3, 0.7])
-    with left_column:
-        stl.header("Task 2")
-        stl.write("##")
-        stl.write("""
-        Histogram of the time difference between Consecutive messages
-        """)
-    with right_column:
-        df['time_difference_seconds'] = df.groupby("msg_type")["msg_sent_standard_time"].diff()
-
-        # Plot the histogram
-        fig, ax = plt.subplots()
-        ax.hist( df[df["msg_type"] == 'message']["time_difference"].dt.total_seconds() / 60,
-                bins=10,
-                edgecolor='black')
-        ax.set_title('Time Differences between Consecutive Messages')
-        ax.set_xlabel('Time Difference (minutes)')
-        ax.set_ylabel('Frequency')
-        # Display the plot using Streamlit
-        stl.pyplot(fig)
-with stl.container():
-    stl.write("---")
-    left_column, right_column = stl.columns([0.3, 0.7])
-    with left_column:
-        stl.header("Task 2")
-        stl.write("##")
-        stl.write("""
-        Histogram of the time difference between Consecutive replys of a message
-        """)
-    with right_column:
-        fig, ax = plt.subplots()
-        ax.hist(combined_df['time_difference'].dt.total_seconds() / 60, bins=15, edgecolor='black')
-        ax.set_title('Time Differences between Consecutive Replies (Combined Data)')
-        ax.set_xlabel('Time Difference (minutes)')
-        ax.set_ylabel('Frequency')
-
-        # Display the plot using Streamlit
-        stl.pyplot(fig)
+# Visualize top 10 users by number of reactions
+st.subheader("Top 10 Users by Number of Reactions")
+top_reactions_per_user = filtered_df.groupby('sender_name')['reply_users_count'].size().nlargest(10)
+st.bar_chart(top_reactions_per_user)
